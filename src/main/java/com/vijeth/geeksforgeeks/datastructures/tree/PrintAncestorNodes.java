@@ -27,6 +27,17 @@ public class PrintAncestorNodes {
     }
 
     public static void main(String[] args) {
+        /* Construct the following binary tree
+                  1
+                /   \
+               2     3
+              /  \
+             4    5
+            /
+           7
+
+        */
+
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
