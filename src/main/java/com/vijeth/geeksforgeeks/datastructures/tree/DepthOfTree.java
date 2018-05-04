@@ -2,7 +2,7 @@ package com.vijeth.geeksforgeeks.datastructures.tree;
 
 public class DepthOfTree {
 
-    static class Node{
+    private static class Node{
         int data;
         Node left;
         Node right;
@@ -16,9 +16,7 @@ public class DepthOfTree {
         if(node == null){
             return 0;
         }
-        int leftSum = 1 + depth(node.left);
-        int rightSum = 1 + depth(node.right);
-        return Math.max(leftSum, rightSum);
+        return 1 + Math.max(depth(node.left), depth(node.right));
     }
 
     public static void main(String[] args) {
