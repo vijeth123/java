@@ -1,4 +1,4 @@
-package com.vijeth.design.pattern;
+package com.vijeth.design.pattern.behavioral;
 
 import java.util.*;
 

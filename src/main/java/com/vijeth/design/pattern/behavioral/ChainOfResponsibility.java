@@ -1,4 +1,4 @@
-package com.vijeth.design.pattern;
+package com.vijeth.design.pattern.behavioral;
 
 interface Chain{
     public void setNext(Chain chain);
