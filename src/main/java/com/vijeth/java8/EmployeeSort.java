@@ -2,6 +2,7 @@ package com.vijeth.java8;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 class Employee{
@@ -41,11 +42,11 @@ public class EmployeeSort {
         employees.forEach(System.out::println);
 
         System.out.println("\n\nSorted by id:");
-        Collections.sort(employees, (e1, e2) -> e1.getId().compareTo(e2.getId()));
+        Collections.sort(employees, Comparator.comparing(Employee::getId));
         employees.forEach(System.out::println);
 
         System.out.println("\n\nSorted by name:");
-        Collections.sort(employees, (e1, e2) -> e1.getName().compareTo(e2.getName()));
+        Collections.sort(employees, Comparator.comparing(Employee::getName));
         employees.forEach(System.out::println);
     }
 }
