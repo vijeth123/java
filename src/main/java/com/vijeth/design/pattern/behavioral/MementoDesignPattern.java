@@ -16,7 +16,7 @@ class Memento{
 
 class Originator{
 
-      private String state;
+    private String state;
 
     public String getState() {
         return state;
