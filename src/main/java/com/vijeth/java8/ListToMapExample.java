@@ -17,6 +17,13 @@ public class ListToMapExample {
         public String getName() {
             return name;
         }
+
+        @Override
+        public String toString() {
+            return "Employee{" +
+                    "name='" + name + '\'' +
+                    '}';
+        }
     }
 
     public static void main(String[] args) {
@@ -31,6 +38,8 @@ public class ListToMapExample {
         map.entrySet().stream().forEach(entry ->{
             System.out.println(entry.getKey()+"\t"+entry.getValue());
         });
+
+
 
     }
 }

@@ -43,7 +43,7 @@ public class CyclicBarrierTest {
         passengerThread3.start();
         passengerThread4.start();
 
-        PassengerThread passengerThread5 = new PassengerThread("Sri", cyclicBarrier, 7);
+        PassengerThread passengerThread5 = new PassengerThread("Sri", cyclicBarrier, 2);
         PassengerThread passengerThread6 = new PassengerThread("Jags", cyclicBarrier, 9);
         PassengerThread passengerThread7 = new PassengerThread("Viru", cyclicBarrier, 6);
         PassengerThread passengerThread8 = new PassengerThread("Sanketh", cyclicBarrier, 8);
