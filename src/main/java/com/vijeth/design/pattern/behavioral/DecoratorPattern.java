@@ -1,58 +1,47 @@
 package com.vijeth.design.pattern.behavioral;
 
-
-interface IceCream{
-    public String makeIceCream();
+interface Decorator{
+    public void prepare();
 }
 
-class SimpleIceCream implements IceCream{
+class Icecream implements Decorator{
     @Override
-    public String makeIceCream() {
-        return "Simple Ice-cream..";
+    public void prepare() {
+        System.out.println("Preparing plain ice-cream!");
     }
 }
 
-abstract class Decorator implements IceCream{
-    protected IceCream specialIceCream;
+class Nuts implements Decorator{
+    private Decorator decorator;
 
-    public Decorator(IceCream specialIceCream) {
-        this.specialIceCream = specialIceCream;
-    }
-}
-
-class NutsIceCream extends Decorator{
-    public NutsIceCream(IceCream specialIceCream) {
-        super(specialIceCream);
+    public Nuts(Decorator decorator){
+        this.decorator = decorator;
     }
 
     @Override
-    public String makeIceCream() {
-        return specialIceCream.makeIceCream() + addNuts();
-    }
-
-    private String addNuts(){
-        return " + Adding Nuts..";
+    public void prepare(){
+        this.decorator.prepare();
+        System.out.println(" Adding nuts!");
     }
 }
 
-class HoneyIceCream extends Decorator{
-    public HoneyIceCream(IceCream specialIceCream) {
-        super(specialIceCream);
+class Honey implements Decorator{
+    private Decorator decorator;
+
+    public Honey(Decorator decorator){
+        this.decorator = decorator;
     }
 
     @Override
-    public String makeIceCream() {
-        return specialIceCream.makeIceCream() + addHoney();
-    }
-
-    private String addHoney(){
-        return " + Adding Honey..";
+    public void prepare(){
+        this.decorator.prepare();
+        System.out.println(" Adding honey!");
     }
 }
 
 public class DecoratorPattern {
     public static void main(String[] args) {
-        IceCream iceCream = new HoneyIceCream(new NutsIceCream(new SimpleIceCream()));
-        System.out.println(iceCream.makeIceCream());
+        Decorator icecream = new Honey(new Nuts(new Icecream()));
+        icecream.prepare();
     }
 }
