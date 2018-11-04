@@ -22,6 +22,6 @@ public class LargestSumContiguousSubarray {
     {
         int a[] = { -2, -3, 4, -1, -2, 1, 5, -3, 50, -20 };
         int n = a.length;
-        System.out.println("Largest sum of contigous array: "+ maxSubArraySum(a));
+        System.out.println("Largest sum of contiguous array: "+ maxSubArraySum(a));
     }
 }
