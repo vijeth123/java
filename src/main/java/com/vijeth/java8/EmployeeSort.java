@@ -39,14 +39,18 @@ public class EmployeeSort {
                 new Employee(40,"Allen"));
 
         System.out.println("Before sorting:");
-        employees.forEach(System.out::println);
+        employees.stream().forEach(System.out::println);
 
         System.out.println("\n\nSorted by id:");
         Collections.sort(employees, Comparator.comparing(Employee::getId));
-        employees.forEach(System.out::println);
+        employees.stream().forEach(System.out::println);
 
         System.out.println("\n\nSorted by name:");
         Collections.sort(employees, Comparator.comparing(Employee::getName));
-        employees.forEach(System.out::println);
+        employees.stream().forEach(System.out::println);
+
+        System.out.println("\n\nReverse sorted by name:");
+        Collections.sort(employees, Comparator.comparing(Employee::getName, Comparator.reverseOrder()));
+        employees.stream().forEach(System.out::println);
     }
 }
