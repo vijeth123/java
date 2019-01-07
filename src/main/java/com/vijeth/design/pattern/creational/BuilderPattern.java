@@ -58,7 +58,7 @@ class User{
     }
 }
 
-public class BuilderTest {
+public class BuilderPattern {
     public static void main(String[] args) {
         User user = new User.UserBuilder("Vijeth", "Devangi").age(30).phoneNumber(912313434).address("Shimoga").build();
         System.out.println(user);

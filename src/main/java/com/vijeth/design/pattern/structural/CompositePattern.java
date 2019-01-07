@@ -106,7 +106,7 @@ class Developer implements Employee{
     }
 }
 
-public class Composite {
+public class CompositePattern {
     public static void main(String[] args) {
         Employee ed = new ExecutiveDirector("Ashish");
 

@@ -23,7 +23,7 @@ class OrderFacade{
 }
 
 
-public class FacadeTest {
+public class FacadePattern {
     public static void main(String[] args) {
         OrderFacade orderFacade = new OrderFacade();
         orderFacade.order("34023487");

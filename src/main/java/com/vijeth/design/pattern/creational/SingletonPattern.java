@@ -63,7 +63,7 @@ enum EnumSingleton{
     INSTANCE;
 }
 
-public class SingletonTest {
+public class SingletonPattern {
     public static void main(String[] args) throws IOException, CloneNotSupportedException, ClassNotFoundException {
         System.out.println("\n******************************************************************\n");
 

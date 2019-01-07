@@ -60,7 +60,7 @@ class ComputerFactory{
     }
 }
 
-public class FactoryTest {
+public class FactoryPattern {
     public static void main(String[] args) {
         ComputerFactory computerFactory = new ComputerFactory();
         System.out.println(computerFactory.getComputer("PC"));

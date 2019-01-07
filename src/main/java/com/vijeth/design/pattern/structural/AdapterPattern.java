@@ -77,7 +77,7 @@ class LenovoP2 implements MobilePhone{
 }
 
 
-public class AdapterTest {
+public class AdapterPattern {
     public static void main(String[] args) {
         WallSocket wallSocket = new WallSocket();
         Adapter adapter = new MobileCharger(wallSocket);

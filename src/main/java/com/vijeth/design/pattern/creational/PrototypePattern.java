@@ -27,7 +27,7 @@ class EmployeeNames{
     }
 }
 
-public class PrototypeTest {
+public class PrototypePattern {
     public static void main(String[] args) throws CloneNotSupportedException {
         EmployeeNames employeeNames = new EmployeeNames();
         employeeNames.loadEmployeeNames();

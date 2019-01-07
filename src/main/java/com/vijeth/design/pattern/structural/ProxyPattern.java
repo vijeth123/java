@@ -37,7 +37,7 @@ class InternetProxy implements Internet{
     }
 }
 
-public class ProxyTest {
+public class ProxyPattern {
     public static void main(String[] args) {
         Internet proxy = new InternetProxy();
         proxy.connect("google.com");

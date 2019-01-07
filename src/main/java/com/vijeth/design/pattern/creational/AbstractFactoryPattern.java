@@ -80,7 +80,7 @@ class ElectronicsFactory{
     }
 }
 
-public class AbstractFactoryTest {
+public class AbstractFactoryPattern {
     public static void main(String[] args) {
         System.out.println(ElectronicsFactory.getElectronicItem(new KeyBoardFactory("Lenovo", 13000)));
         System.out.println(ElectronicsFactory.getElectronicItem(new MouseFactory("Logitech", 850)));
