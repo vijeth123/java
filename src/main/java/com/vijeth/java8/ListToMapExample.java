@@ -39,7 +39,5 @@ public class ListToMapExample {
             System.out.println(entry.getKey()+"\t"+entry.getValue());
         });
 
-
-
     }
 }
