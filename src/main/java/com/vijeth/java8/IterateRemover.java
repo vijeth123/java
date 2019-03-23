@@ -15,7 +15,7 @@ public class IterateRemover {
         System.out.println("Before removal:");
         iterateRemover.print(names);
 
-        iterateRemover.remove(names);
+        iterateRemover.removeSomeSites(names);
 
         System.out.println("\n\nAfter removal:");
         iterateRemover.print(names);
@@ -26,7 +26,7 @@ public class IterateRemover {
 
     }
 
-    private void remove(List<String> list){
+    private void removeSomeSites(List<String> list){
         for(Iterator<String> iterator = list.iterator(); iterator.hasNext();){
             String name = iterator.next();
             if(name.equals("Facebook")){

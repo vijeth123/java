@@ -25,7 +25,7 @@ public class ReentrantLockTest {
     public static void main(String[] args) {
         MyCounter myCounter = new MyCounter();
 
-ExecutorService executorService = Executors.newFixedThreadPool(2);
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
 
         Runnable runnable1 = () -> {
             for (int i = 0; i < 30000; i++) {

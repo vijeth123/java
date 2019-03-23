@@ -1,7 +1,7 @@
 package com.vijeth.geeksforgeeks.algorithms;
 
 
-public class FibTest1 {
+public class Fibonacci {
 
     public static int fib(int n){
         if(n <= 1){
