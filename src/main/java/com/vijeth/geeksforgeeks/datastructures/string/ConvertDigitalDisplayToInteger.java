@@ -61,3 +61,4 @@ public class ConvertDigitalDisplayToInteger {
         getDigits(s2);
     }
 }
+

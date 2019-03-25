@@ -20,7 +20,6 @@ public class PrintAnagramsTogether {
                 list.add(arr[i]);
                 map.put(sortedString, list);
             }
-
         }
 
         map.forEach((k, v) -> {
